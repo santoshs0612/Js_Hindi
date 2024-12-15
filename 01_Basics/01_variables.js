@@ -10,7 +10,8 @@ accountCity= "Bangaluru"
 let accountState;
 console.log(accountId)
 /*
-Prefer Not to use Var Bacause of issue in Block scope anf Functional scope 
+Prefer Not to use Var Bacause of issue in Block scope 
+and Functional scope 
 
 
 */
