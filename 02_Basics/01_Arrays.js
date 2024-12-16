@@ -34,13 +34,15 @@ console.log(arr[0])
 
 // Slice , Plice
 
-console.log("A " ,myArray);
-const myn1= myArray.slice(1,3)
+// console.log("A " ,myArray);
+// const myn1= myArray.slice(1,3)
 
-console.log(myn1);
-console.log("B ", myArray)
-const myn2 = myArray.splice(1,3)
-console.log(myn2);
-console.log("C ", myArray)
+// console.log(myn1);
+// console.log("B ", myArray)
+// const myn2 = myArray.splice(1,3)
+// console.log(myn2);
+// console.log("C ", myArray)
+
+
 
 
