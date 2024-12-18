@@ -38,4 +38,37 @@ function loginUserMessage(userName = "Sam"){
 
 // console.log(loginUserMessage("Santosh"))
 
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+function calculateCartPrice(val1,val2,...num1){
+    return num1
+}
+// here ... is rest operator , it also called spread operator  but here it is rest operator 
+// console.log(calculateCartPrice(200))
+
+// console.log(calculateCartPrice(200,400,500))
+
+
+const user = {
+    userName:"Santosh kumar",
+    price: 500
+}
+
+function handleObject(anyobject){
+    console.log(`UserName if ${anyobject.userName} and price is ${anyobject.price}`)
+}
+
+// handleObject(user)
+
+handleObject({
+    userName: "Bilok",
+    price:69696
+})
+
+const myNewArray = [200,400,100,600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray))
