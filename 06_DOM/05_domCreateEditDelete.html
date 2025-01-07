@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Edit ANd Delete</title>
+</head>
+<body style="background-color: #212221; color :aliceblue">
+
+    <ul class="language">
+
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+<script>
+
+    function addLanguage(LanguageName){
+        const li = document.createElement('li');
+        li.innerHTML = `${LanguageName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("Python")
+    addLanguage("typeScript")
+
+    // above function is expensive so design a optimized function 
+
+    function addOptiLanguage(LanguageName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(LanguageName));
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("Golang")
+
+    // Editing the value 
+
+    const secondLang =document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+    
+    const newLi = document.createElement('li')
+
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    // edit 
+    const firstLang = document.querySelector("li:first-child")
+
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+    // Removing 
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
